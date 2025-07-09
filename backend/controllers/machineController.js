@@ -25,6 +25,8 @@ function freeMachine(req,res){
     if(!machine) return res.statut(404).json({error: 'Machine not found'});
 
     machine.user = null;
-    res.json()
+    res.json();
 }
+
+module.exports = { getMachines, assignMachine, freeMachine };
 
